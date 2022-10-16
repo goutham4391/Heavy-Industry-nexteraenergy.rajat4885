@@ -1,0 +1,907 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+	
+	
+	
+	<meta name="template" content="content-page-template"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<meta name="format-detection" content="telephone=no"/>
+	
+	
+    
+    
+
+    
+    
+
+	
+
+    
+
+    
+    
+    
+    
+    <script src="/app/core/dojoConfig.js?_v=05082020151427"></script>
+    <script src="/app/framework/dojo/dojo/dojo.js?_v=05082020151427"></script>
+
+	
+	<link rel="stylesheet" href="/content/dam/fpl/clientlibs/css/styles.css"/>
+	<link rel="icon" type="image/vnd.microsoft.icon" href="/etc.clientlibs/fpl/clientlibs/clientlib-base/resources/favicon.ico"/>
+	<link rel="shortcut icon" type="image/vnd.microsoft.icon" href="/etc.clientlibs/fpl/clientlibs/clientlib-base/resources/favicon.ico"/>
+	<title>FPL | Page Not Found</title>
+    
+
+    
+
+    
+<link rel="stylesheet" href="/etc.clientlibs/fpl/clientlibs/clientlib-base.min.css" type="text/css">
+
+
+
+
+    
+    
+    
+
+    
+
+    
+    
+
+
+
+    
+    
+
+
+
+    
+
+    
+</head>
+
+    <body class="fpl-template page basicpage ">
+    	<div id="skip" role="navigation" aria-label="skip to main content"><a href="#content" tabindex="1">Skip to Main Content</a></div>
+        <section class="fpl-body" aria-label="body">
+        	<a name="content"> </a>
+
+                
+                
+                    
+
+
+
+                    
+<div class="root responsivegrid">
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    <div class="experiencefragment aem-GridColumn aem-GridColumn--default--12">
+<div id="experiencefragment-9982d2f062" class="cmp-experiencefragment cmp-experiencefragment--header">
+<div class="xf-content-height">
+    
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    <div class="responsivegrid aem-GridColumn aem-GridColumn--default--12">
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    <div class="openhtml aem-GridColumn aem-GridColumn--default--12">
+<script src="//assets.adobedtm.com/launch-EN8bdc51024bb84ee9b1cf556b460b847f.min.js"></script>
+<header class="header clearfix nav-logged-out overlay" >
+    <div>
+        <script>
+			
+			if(window.location.href.indexOf("/my-account/payment-extension") > -1){
+				require(["dojo"], function() {	
+					require(["core/view/HeaderView", "jquery"], function(HeaderView, $) {
+                        var header = new HeaderView({}, $('header').get(0));
+                        header.startup();
+                        Date.now = Date.now || function() { return +new Date; };
+						var qs=function(e){if(e=="")return{};var t={};for(var n=0;n<e.length;++n){var r=e[n].split("=");if(r.length!=2)continue;t[r[0]]=decodeURIComponent(r[1].replace(/\+/g," "))}return t}(window.location.search.substr(1).split("&"));
+                        if(qs["q"]!=undefined && qs["q"]!='')
+                        {
+                            $('button.nav-search-submit').addClass('disabled');
+                            if($('.searchboxtext').length>0){
+                                $('.searchboxtext').val(qs["q"]);
+                            }
+                        }
+                        $('.searchboxtext').each(function(){
+                            $(this).attr('data-default-value',$(this).val());
+                        });
+
+                        $('.searchboxtext').blur(function() {
+                            if($(this).val()==""){
+                                $(this).val($(this).attr('rel'));
+                                $('button.nav-search-submit').addClass('disabled');
+                            }
+                        });
+        
+                        $('.searchboxtext').focus(function(){
+                            if($(this).val()== $(this).attr('rel')) {          
+                                $(this).val("");
+                                $('button.nav-search-submit').removeClass('disabled');
+                            }
+                        });
+
+                        $('button.nav-search-submit').click(function( event ) {
+
+							var searchKeyword = '';	
+							var defaultValue;
+							var searchResultsPage;
+
+
+							if($(window).width() > 767){
+								searchKeyword = $(this).parent().prev().find('.searchboxdesktop').val();
+								defaultValue = $(this).parent().prev().find('.searchboxdesktop').attr('data-default-value');
+								
+							}
+							else{
+								searchKeyword = $(this).prev('.searchboxmob').val();
+								defaultValue = $(this).prev('.searchboxmob').attr('data-default-value');
+
+							}
+
+
+							if(window.location.href.indexOf("esqa.fpl.com") > -1 || window.location.href.indexOf("es.fpl.com") > -1){
+								searchResultsPage = '/home/es-search-results.html';
+							}
+							else{
+								searchResultsPage = '/home/search-results.html';
+	
+							}
+
+							if(searchKeyword === '' || searchKeyword === null || searchKeyword === undefined){
+                                searchKeyword = $(this).parent().find('.searchboxtext').val();
+								defaultValue = $(this).parent().find('.searchboxtext').attr('data-default-value');
+							}
+
+
+                            event.preventDefault();
+                            if(!(searchKeyword == "" || searchKeyword == defaultValue)){
+                                var redirectUrl = searchResultsPage + "?query="+encodeURIComponent(searchKeyword);
+                                document.location.href = redirectUrl;
+                            }else{
+                                $(this).addClass('disabled');
+                            }
+                        });
+					});
+				});			
+			}
+			
+			else{
+				require(["dojo/dojo"], function() {	
+					require(["core/view/HeaderView", "jquery"], function(HeaderView, $) {
+                        var header = new HeaderView({}, $('header').get(0));
+                        header.startup();
+                        Date.now = Date.now || function() { return +new Date; };
+						var qs=function(e){if(e=="")return{};var t={};for(var n=0;n<e.length;++n){var r=e[n].split("=");if(r.length!=2)continue;t[r[0]]=decodeURIComponent(r[1].replace(/\+/g," "))}return t}(window.location.search.substr(1).split("&"));
+                        if(qs["q"]!=undefined && qs["q"]!='')
+                        {
+                            $('button.nav-search-submit').addClass('disabled');
+                            if($('.searchboxtext').length>0){
+                                $('.searchboxtext').val(qs["q"]);
+                            }
+                        }
+                        $('.searchboxtext').each(function(){
+                            $(this).attr('data-default-value',$(this).val());
+                        });
+
+                        $('.searchboxtext').blur(function() {
+                            if($(this).val()==""){
+                                $(this).val($(this).attr('rel'));
+                                $('button.nav-search-submit').addClass('disabled');
+                            }
+                        });
+        
+                        $('.searchboxtext').focus(function(){
+                            if($(this).val()== $(this).attr('rel')) {          
+                                $(this).val("");
+                                $('button.nav-search-submit').removeClass('disabled');
+                            }
+                        });
+
+                        $('button.nav-search-submit').click(function( event ) {
+
+							var searchKeyword = '';	
+							var defaultValue;
+							var searchResultsPage;
+
+
+							if($(window).width() > 767){
+								searchKeyword = $(this).parent().prev().find('.searchboxdesktop').val();
+								defaultValue = $(this).parent().prev().find('.searchboxdesktop').attr('data-default-value');
+								
+							}
+							else{
+								searchKeyword = $(this).prev('.searchboxmob').val();
+								defaultValue = $(this).prev('.searchboxmob').attr('data-default-value');
+
+							}
+
+
+							if(window.location.href.indexOf("esqa.fpl.com") > -1 || window.location.href.indexOf("es.fpl.com") > -1){
+								searchResultsPage = '/home/es-search-results.html';
+							}
+							else{
+								searchResultsPage = '/home/search-results.html';
+	
+							}
+
+							if(searchKeyword === '' || searchKeyword === null || searchKeyword === undefined){
+                                searchKeyword = $(this).parent().find('.searchboxtext').val();
+								defaultValue = $(this).parent().find('.searchboxtext').attr('data-default-value');
+							}
+
+
+                            event.preventDefault();
+                            if(!(searchKeyword == "" || searchKeyword == defaultValue)){
+                                var redirectUrl = searchResultsPage + "?query="+encodeURIComponent(searchKeyword);
+                                document.location.href = redirectUrl;
+                            }else{
+                                $(this).addClass('disabled');
+                            }
+                        });
+					});
+				});
+			}
+			
+
+
+        </script>
+    </div>
+</header>
+
+<div id="fpl-alert-banner-container" class="fpl-alert-banner-container" data-src=""></div>
+<div id="wors-alert-banner-container" data-src="" class="worsalertbanner"></div> </div>
+
+    
+</div>
+</div>
+
+    
+</div>
+
+</div></div>
+
+    
+</div>
+<div class="responsivegrid aem-GridColumn aem-GridColumn--default--12">
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    <div class="textbanner title aem-GridColumn aem-GridColumn--default--12"><div class="CQrte container">
+
+    
+    <div class="textbanner">
+        <div class="masthead masthead-text back-to-link container">       
+            <div class="header-row masthead-text clearfix">
+                <div class="text__banner fpl-section">
+                    
+                    <h1>404 - Page Not Found</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+	
+    
+
+
+</div></div>
+<div class="fplcontainer container responsivegrid aem-GridColumn aem-GridColumn--default--12">
+
+    
+    <div id="fplcontainer-e15d17de52" class="cmp-container fpl-section">
+        
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    <div class="openhtml aem-GridColumn aem-GridColumn--default--12">
+<script>
+if (window.location.hostname.indexOf("eweb.nee.com")!=-1) {
+	window.location.replace("https://eweb.nee.com/error/404.html");
+}
+</script></div>
+<div class="separator aem-GridColumn aem-GridColumn--default--12">
+
+
+<!-- Separator (Adds a space of 50px) -->
+
+<div class="top-spacer"></div>
+
+
+
+
+<!-- Horizontal Rule (Lightning Bolt) -->
+
+
+
+<!-- Horizontal Rule (Plain) -->
+
+
+
+
+
+</div>
+<div class="responsivegrid aem-GridColumn aem-GridColumn--default--12">
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--tablet--12 aem-Grid--default--12 aem-Grid--phone--12 ">
+    
+    <div class="fplcontainer container responsivegrid aem-GridColumn--tablet--12 aem-GridColumn--offset--tablet--0 aem-GridColumn--default--none aem-GridColumn--phone--none aem-GridColumn--phone--12 aem-GridColumn--tablet--none aem-GridColumn aem-GridColumn--default--6 aem-GridColumn--offset--phone--0 aem-GridColumn--offset--default--0">
+
+    
+    <div id="fplcontainer-0dfe475b72" class="cmp-container fpl-section">
+        
+
+
+<div class="aem-Grid aem-Grid--6 aem-Grid--tablet--12 aem-Grid--default--6 aem-Grid--phone--12 ">
+    
+    <div class="text aem-GridColumn--tablet--12 aem-GridColumn--offset--tablet--0 aem-GridColumn--phone--none aem-GridColumn--phone--12 aem-GridColumn--tablet--none aem-GridColumn aem-GridColumn--default--6 aem-GridColumn--offset--phone--0"><div data-viewmore-required="0" class="CQrte">
+
+	
+
+    <div class=''>
+    	<h2>Oops!</h2>
+<h4>The page you're looking for isn't here anymore..</h4>
+<hr />
+
+<p><em>Try these pages instead:</em></p>
+<p><strong><a title="helpful links" href="/support/helpful-links.html">Helpful Links</a><br />
+ <a title="customer support" href="/support/contact.html">Customer Support</a><br />
+ <a title="report an outage" href="/account/report-outage.html">Outages<br />
+ </a><a title="ways to pay your bill" href="/account/bill/ways-to-pay.html">Ways to Pay</a><br />
+ <a title="FPL home page" href="/home.html">Go to Home Page</a></strong></p>
+<p> </p>
+
+     </div>
+</div>
+
+    
+</div>
+<div class="openhtml aem-GridColumn--tablet--12 aem-GridColumn--phone--12 aem-GridColumn aem-GridColumn--default--6">
+</div>
+
+    
+</div>
+
+    </div>
+
+    
+</div>
+<div class="fplcontainer container responsivegrid aem-GridColumn--tablet--12 aem-GridColumn--offset--tablet--0 aem-GridColumn--default--none aem-GridColumn--phone--none aem-GridColumn--phone--12 aem-GridColumn--tablet--none aem-GridColumn aem-GridColumn--default--6 aem-GridColumn--offset--phone--0 aem-GridColumn--offset--default--0">
+
+    
+    <div id="fplcontainer-4ec0d3d15c" class="cmp-container fpl-section">
+        
+
+
+<div class="aem-Grid aem-Grid--6 aem-Grid--tablet--12 aem-Grid--default--6 aem-Grid--phone--12 ">
+    
+    <div class="openhtml aem-GridColumn--tablet--12 aem-GridColumn--phone--12 aem-GridColumn aem-GridColumn--default--6">
+</div>
+
+    
+</div>
+
+    </div>
+
+    
+</div>
+<div class="openhtml aem-GridColumn aem-GridColumn--default--12">
+</div>
+
+    
+</div>
+</div>
+
+    
+</div>
+
+    </div>
+
+    
+</div>
+
+    
+</div>
+</div>
+<div class="experiencefragment aem-GridColumn aem-GridColumn--default--12">
+<div id="experiencefragment-67ee055586" class="cmp-experiencefragment cmp-experiencefragment--footer">
+<div class="xf-content-height">
+    
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    <div class="responsivegrid aem-GridColumn aem-GridColumn--default--12">
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    <div class="fatfooter aem-GridColumn aem-GridColumn--default--12">
+	<footer>
+	  <section class="footer content footer-links" role="region" aria-label="footerContent">
+		<div class="row links" id="footerContent">
+		  <div class="col-md-2 col-md-offset-1 col-sm-3">
+			<nav>
+			  <h4 class="list-title collapsed">About FPL<i class="fa fa-sort-desc"></i><i class="fa fa-sort-asc"></i></h4>
+				  <ul class="clearfix">
+					
+						<li><a href="/news.html" target="_self">News</a></li>
+					
+						<li><a href="/about/company-profile.html" target="_self">Company</a></li>
+					
+						<li><a href="https://jobs.nexteraenergy.com" target="_self">Careers</a></li>
+					
+						<li><a href="/environment.html" target="_self">Environment</a></li>
+					
+						<li><a href="/community.html" target="_self">Community</a></li>
+					
+						<li><a href="/help/donate.html" target="_self">Donate to Care To Share®</a></li>
+					
+						<li><a href="/rates.html" target="_self">Rates and Your Bill</a></li>
+					
+				  </ul>
+			</nav>
+		  </div>
+		  <div class="col-md-2 col-sm-3">
+			<nav>
+			  <h4 class="list-title collapsed">About Energy<i class="fa fa-sort-desc"></i><i class="fa fa-sort-asc"></i></h4>
+				  <ul class="clearfix">
+					
+						<li><a href="/energy-my-way.html" target="_self">Energy My Way</a></li>
+					
+						<li><a href="/reliability.html" target="_self">Ensuring Reliability</a></li>
+					
+						<li><a href="/clean-energy.html" target="_self">Clean Energy</a></li>
+					
+						<li><a href="/energy-my-way/solar.html" target="_self">Solar</a></li>
+					
+						<li><a href="/smart-meters.html" target="_self">Smart Meters</a></li>
+					
+						<li><a href="/reliability/power-disturbances.html" target="_self">Power Disturbances</a></li>
+					
+						<li><a href="/safety.html" target="_self">Safety</a></li>
+					
+				  </ul>
+			</nav>
+		  </div>
+		  <div class="col-md-2 col-sm-3">
+			<nav>
+			  <h4 class="list-title collapsed">Partner Resources<i class="fa fa-sort-desc"></i><i class="fa fa-sort-asc"></i></h4>
+				  <ul class="clearfix">
+					
+						<li><a href="/partner/suppliers.html" target="_self">Supplier Home and Login</a></li>
+					
+						<li><a href="/supplier.html" target="_self">PIC Login</a></li>
+					
+						<li><a href="/partner/fuel/fuel-portal.html" target="_self">Fuel Portal</a></li>
+					
+						<li><a href="/construction.html" target="_self">Building and Construction</a></li>
+					
+						<li><a href="/partner/land-use.html" target="_self">Land Use</a></li>
+					
+						<li><a href="/assistagency.html" target="_blank">Assist Agency Login</a></li>
+					
+						<li><a href="/accounting/webtaxi/taxi.html" target="_self">WebTAXI Login</a></li>
+					
+						<li><a href="/depositportal.html" target="_blank">Deposit Portal</a></li>
+					
+				  </ul>
+			</nav>
+		  </div>
+		  <div class="col-md-4 col-sm-3 toggle-container">
+			<nav>
+			  <div class="left">
+				<h4 class="list-title-toggle collapsed">En Español</h4>
+				<div class="toggle">
+				  <span class="on">INGLÉS</span>
+				  <span class="settings-option-toggle" href="#">
+					<span class="settings-option-toggle-inner"></span>
+					<span class="option-state default-option"></span>
+				  </span>
+				  <span class="off">ESPAÑOL</span>
+				</div>
+			  </div>
+			  <div class="right">
+				<p><p>Ahora la información que necesitas sobre tu servicio eléctrico está disponible en español en FPL.com.</p>
+</p>
+				<p>
+				  <a href="" target=""></a>
+				</p>
+				<ul class="clearfix"></ul>
+			  </div>
+			</nav>
+		  </div>
+		</div>
+		<div class="copyright">
+		  <div class="container">
+			<div class="row">
+			  <div class="col-md-10 col-md-offset-1">
+					<ul class="social-icons">
+					  <li>
+						
+							<a href="http://www.facebook.com/fplconnect" target="_blank" class="icon fpl-facebook"><span class="ada-hidden">Facebook</span></a>
+						
+						
+							<a href="http://twitter.com/insidefpl" target="_blank" class="icon fpl-twitter"><span class="ada-hidden">Twitter</span></a>
+						
+						
+							<a href="http://www.youtube.com/user/fpl" target="_blank" class="icon fpl-youtube"><span class="ada-hidden">YouTube</span></a>
+						
+						
+							<a href="http://www.fplblog.com" target="_blank" class="icon fpl-blog"><span class="ada-hidden">FPL Blog</span></a>
+						
+						
+					  </li>
+					</ul>
+					<ul class="social-links">
+						
+							<li><a href="http://www.nexteraenergy.com" target="_blank">A NextEra Energy Company</a></li>
+						
+							<li><a href="http://www.nexteraenergy.com/legal-notice.html" target="_blank">Terms &amp; Conditions</a></li>
+						
+							<li><a href="/privacy.html" target="_blank">Privacy Policy</a></li>
+						
+							<li><a href="http://www.nexteraenergy.com/safety-policy.html" target="_blank">Safety Policy</a></li>
+						
+					</ul>
+					</div>
+			</div>
+			<div class="row">
+				<div class="col-md-10 col-md-offset-1">
+				  <p>Copyright © 1996 - 2021, Florida Power &amp; Light Company. All rights reserved.<br />
+FPL.com is optimized for the following browsers and mobile operating systems: IE 9+, Firefox 31+, Chrome 37+, Safari 6.1+, Apple iOS 7+ and Android 4+.  </p>
+<p style="text-align: center;"><a href="http://www.bbb.org/south-east-florida/business-reviews/electric-companies/florida-power-and-light-company-in-miami-fl-4917#sealclick" target="_blank"><img src="/content/dam/fpl/us/en/fplcommon/images/bbb.png" style="margin-top: 10.0px;" alt="better business bureau logo"/></a></p>
+
+				</div>
+			</div>
+		  </div>
+		</div>  
+	  </section>
+	</footer>
+</div>
+<div class="openhtml aem-GridColumn aem-GridColumn--default--12">
+<!-- coBrowse Modal window  -->
+<!-- Modal -->
+<div class="modal fade" id="coBrowser" role="dialog">
+<div class="modal-dialog co-browse"> 
+   <!-- Modal content-->
+   <div class="modal-content" style="margin: 0 auto; text-align: center;">
+
+       	<div class="modal-header">
+
+          <h4 class="modal-title">Enter the PIN</h4>
+        </div>
+		<div class="modal-body">
+			<p>Please provide us with the Personal Identification Number (PIN) that you were given for a co-browse session with our representative.</p>
+          <!-- Co-Browser Chat enable -->
+          <div class="fpl-form-row co-browser-wrap">
+             <div class="fpl-form-field fleft">
+                <input id="pin-input" type="text" class="fpl-input fpl-pin" placeholder="Please enter PIN" aria-label="input_pin">
+
+				 <div class="clear"></div>
+                <button id="pin-submit">START</button>
+				<div class="clear"></div>
+                <div class="close chat-cancel" data-dismiss="modal">Cancel</div>
+             </div>
+          </div>
+				<div id="pin-message-container"/>
+             <!--END--- Co-Browser Chat enable -->
+			    <div class="clear"></div>
+       </div>
+       <div class="clear"></div>
+      </div>
+   </div>
+</div>
+<!-- END coBrowse Modal Window  -->
+
+
+
+	<!-- BoldChat Customer Monitor HTML v5.00 (Website=betatest1.fpl.com,ChatButton=Betatest1 Button,ChatInvitation=Demo Site Proactive Invitation Ruleset) -->
+   <script type="text/javascript">
+
+	    var url = window.location.href;
+
+		if(!(url.indexOf('esqa.fpl.com') > -1 || url.indexOf('es.fpl.com') > -1)) {
+
+              window._bcvma = window._bcvma || [];
+			  
+			  _bcvma.push(["setAccountID", "786879942692348330"]);
+              _bcvma.push(["setParameter", "WebsiteID", "781069130027978584"]);
+              _bcvma.push(["setParameter", "InvitationID", "781101011154823242"]);			  			  
+        
+                 //Clear the VisitInfo parameter to remove the error condition on page load
+              _bcvma.push(["setParameter", "VisitInfo", "cleared"]);
+        
+               //_bcvma.push(["addFloat", {type: "chat", id: "781033630374782529"}]);   
+              _bcvma.push(["pageViewed"]);
+        
+             var bcLoad = function(){
+                if(window.bcLoaded) return; window.bcLoaded = true;
+                var vms = document.createElement("script"); vms.type = "text/javascript"; vms.async = true;
+                vms.src = ('https:'==document.location.protocol?'https://':'http://') + "vmss.boldchat.com/aid/786879942692348330/bc.vms4/vms.js";
+                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(vms, s);
+        
+                updatebcvma();
+        
+              };
+              if(window.pageViewer && pageViewer.load) pageViewer.load();
+              else if(document.readyState=="complete") bcLoad();
+              else if(window.addEventListener) window.addEventListener('load', bcLoad, false);
+              else window.attachEvent('onload', bcLoad);
+        
+              var updatebcvma = function(){
+                 if(typeof ChatVars !='undefined'){
+                      //********* REMEMBER TO SET THE WINDOW PARAMETERS MANUALLY TO THE HTML GENERATED BY ADMIN TOOL **************
+                      var accNumFPLCOM = "";
+                      if ((typeof ChatVars.accountNumberFromFplCom) != "undefined")
+                                   accNumFPLCOM=ChatVars.accountNumberFromFplCom;
+                      _bcvma.push(["setParameter", "WindowParameters", "customField_Authenticated="+ChatVars.authenticated.toString()+"&customField_AccountNumberFromWeb="+accNumFPLCOM+"&customField_Intent="+ChatVars.intent]);
+        
+                     //Force refresh
+                       _bcvma.push(["pageViewed"]);
+                       pageViewer.load();
+                       
+                       //******
+        
+                 }
+              }
+
+        }
+
+
+
+
+   </script>
+   <!--noscript>
+      <a href="http://www.boldchat.com" title="Live Chat" target="_blank"><img alt="Live Chat" src="https://vms.boldchat.com/aid/786879942692348330/bc.vmi?wdid=781012939494239358" border="0" width="1" height="1" /></a>
+   </noscript-->
+
+
+   <!-- /BoldChat Customer Monitor HTML v5.00 -->
+
+
+
+<script>
+$(document).ready(function() {
+
+    var url = window.location.href;
+	
+	//$(".social-links").append('<li><a href="javascript:OOo.oo_feedback.show();" target="_self"> Feedback <\/a><\/li>');
+
+	if(!(url.indexOf('esqa.fpl.com') > -1 || url.indexOf('es.fpl.com') > -1)) {
+
+            var s = document.createElement("script");
+            s.type = "text/javascript";
+            s.src = "https://livechat.boldchat.com/pinvites";
+        
+            $("head").append(s);
+
+            var css = document.createElement("link");
+            css.rel = "stylesheet";
+            css.href = "/chat/css/LiveChat.css";
+        
+            $("head").append(css);
+
+            $(".social-links").append('<li><a data-toggle="modal" data-target="#coBrowser"> Co-Browse <\/a><\/li>');
+     		$('.chat-cancel').click(function(){ 
+             	$('#pin-input').val(''); 
+             	$('#pin-input').removeClass("invalid-pin-code");
+             	$('#pin-message-container').text('');
+     		});
+
+
+  	}
+
+
+
+
+
+});
+</script></div>
+<div class="openhtml aem-GridColumn aem-GridColumn--default--12">
+<script>
+$('.root.responsivegrid').children(":first").children('div').eq(1).addClass('homepage-content');
+
+require(["current-layer"], function() {     
+
+    require([ "common/components/ToggleButton"], function(ToggleButton) {
+        new ToggleButton();console.log("ToggleButton");
+    });
+    require([ "common/components/Tooltip"], function(Tooltip) {
+        new Tooltip();console.log("Tooltip");
+    });
+	require([ "common/components/Footer"], function(Footer) {
+        new Footer();console.log("loaded9");
+    });
+
+});
+</script>    
+
+<script>
+  require(["current-layer"], function() {  
+    require(["jquery", "core/controller/statefulValues"], function($, statefulValues) {	
+        var showPage = function() {
+            $(".window-load").fadeOut("slow");
+                   $("footer").removeClass("hidden");
+        };
+        var hidePage = function() {
+            $(".window-load").fadeIn("slow");
+                    $("footer").addClass("hidden");
+        };
+
+	// if the appViewDeferred has a value, wait for the deferred to be resolved
+	// with the view
+	if (window.appViewDeferred) {
+		window.appViewDeferred.then(function(appView) {
+			// watch the statefulValues to see if the login view is shown
+			statefulValues.watch("login-shown", function(name, oldVal, val) { 
+				if (val) {
+					// if the login is shown, show the page (i.e. show the login)
+					showPage();
+				} else {
+					// if the login is not shown, hide the page (i.e. show the spinner and hide the footer
+					hidePage();
+					if (appView.ready) {
+						// if the app view is ready (it has finished loading), then show it
+						showPage();
+					} else {
+						// otherwise, add a listener on the view for the 'app-ready' event
+						appView.on("app-ready", function(e) {
+							showPage();
+						});
+					}
+				}
+        	}, 
+			true /* boolean: immediate - execute the callback as soon as the watch is created */, 
+			true /* boolean: undefinedOK - execute the callback immediately, even if the value is undefined */);
+        });
+	} else {
+		$(window).load(function() {
+						showPage();
+		});
+	}
+});
+});
+
+</script>
+
+<script>
+    
+        
+			$(window).on('load', function() {
+				
+				if((!(window.location.href.indexOf('web-outage.') > -1)) && (!(window.location.href.indexOf('web-outage-auth.') > -1)) && (!(window.location.href.indexOf('web-outage-status.') > -1))){
+					if(document.cookie.indexOf('fpl.newWorsCookie') > -1){
+							$("#wors-alert-banner-container").load("/content/experience-fragments/fpl/us/en/wors-alert/master.html" + ' .fpl-alert-banner',function(){
+								$("body").addClass("has-alert");
+								
+								$("#wors-alert-banner-hide").on("click", function() {
+									$("#wors-alert-banner-container").hide();
+									sessionStorage.setItem("wors-banner-closed", "yes");
+								});	
+								
+								//	Changing OUTAGES link for WORS pages when Ticket Cookie is available.
+								if(document.cookie.indexOf('fpl.newWorsCookie') > -1){
+									$('a[href="#outage"]').attr("href", "/my-account/web-outage-status.html");
+								}
+
+								$('a[href="/my-account/web-outage-status.html"]').on("click", function() {
+									var date = new Date();
+									var min = 8*60;
+									date.setTime(date.getTime() + (min * 60 * 1000));
+									document.cookie = 'worsViewDetails' + '=' + 'true'+'; path=/'+'; domain=.fpl.com'+'; expires='+date;
+								});
+										
+								
+							});
+					}
+				}
+				
+				
+				
+				
+				$("#fpl-alert-banner-container").load("/content/experience-fragments/fpl/us/en/alert/master.html" + ' .fpl-alert-banner',function(){
+					/*HAS-ALERT Logic - START*/
+					if($('#fpl-alert-banner-container').html().length > 0){
+						$( "body" ).addClass("has-alert");
+					}else{
+						$( "body" ).removeClass("has-alert");
+					}
+					/*HAS-ALERT Logic - END*/
+					
+					$("#alert-banner-hide").on("click", function() {
+						$("#fpl-alert-banner-container").hide();
+						sessionStorage.setItem("banner-closed", "yes");
+					});
+				
+				});
+
+			});
+        
+
+        $(function() {
+                if (sessionStorage.getItem('banner-closed') === "yes") {
+                    //trigger close banner
+                    $("#fpl-alert-banner-container").hide();
+                }
+       	});
+
+     	$(function() {
+                if (sessionStorage.getItem('wors-banner-closed') === "yes") {
+                    //trigger close banner
+                    $("#wors-alert-banner-container").hide();
+                }
+      	});
+	
+
+    
+</script>
+<script type="text/javascript">_satellite.pageBottom();</script>
+
+<script>
+//adjust blog link
+$('a[href="http://www.fplblog.com"]').attr('href', "https://www.fpl.com/blog/watts-happening.html");
+</script></div>
+
+    
+</div>
+</div>
+
+    
+</div>
+
+</div></div>
+
+    
+</div>
+
+    
+</div>
+</div>
+
+
+                    
+    
+    
+
+
+
+    
+
+	
+		
+    
+<script src="/etc.clientlibs/clientlibs/granite/jquery.min.js"></script>
+<script src="/etc.clientlibs/core/wcm/components/commons/site/clientlibs/container.min.js"></script>
+<script src="/etc.clientlibs/fpl/clientlibs/clientlib-base.min.js"></script>
+
+
+
+	
+
+    
+
+    
+
+    
+
+                    
+
+                
+           	
+		</section>
+    </body>
+</html>

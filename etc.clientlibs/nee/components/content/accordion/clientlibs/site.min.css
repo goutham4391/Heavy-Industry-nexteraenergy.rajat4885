@@ -1,0 +1,9 @@
+.cmp-accordion__header{margin:0}
+.cmp-accordion__button{display:block;width:100%;text-align:left}
+.cmp-accordion__panel--hidden{display:none}
+.cmp-accordion__panel--expanded{display:block}
+.accordion .cmp-accordion__item{position:relative}
+.accordion .cmp-accordion__item .cmp-accordion__header{font:inherit;margin:0}
+.accordion .cmp-accordion__item .cmp-accordion__header .cmp-accordion__button{display:block;width:100%;text-align:left;border:0;background-color:transparent;border-bottom:.0625rem solid #efefef;padding:.5rem 0;position:relative;font:inherit;cursor:pointer;outline:inherit}
+.accordion .cmp-accordion__item .cmp-accordion__header .cmp-accordion__button .cmp-accordion__icon:before{content:"\f105";font-family:FontAwesome;font-style:normal;font-weight:normal;text-decoration:none;position:absolute;top:50%;right:1%;transform:translateY(-50%)}
+.accordion .cmp-accordion__item .cmp-accordion__header .cmp-accordion__button.cmp-accordion__button--expanded .cmp-accordion__icon:before{content:"\f107"}
